@@ -26,3 +26,49 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code settings
+.vscode/
+
+# NuGet Packages
+*.nupkg
+# Ignore unpacked packages
+**/packages/*
+# Keep build/ to allow for build scripts
+!**/packages/build/
+
+# .NET Core build info
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Environment files
+*.env
+
+# JetBrains Rider
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# macOS / Linux system files
+.DS_Store
+Thumbs.db
