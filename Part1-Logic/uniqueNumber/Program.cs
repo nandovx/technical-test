@@ -41,7 +41,11 @@ class Program
                 uniqueNumbers.Remove(numList[i]);
             }
         }
-
+        if (uniqueNumbers.Count == 0)
+        {
+            Console.WriteLine("All elements has been repeated");
+            return;
+        }
         Console.WriteLine(string.Join(", ", uniqueNumbers));
     }
 
