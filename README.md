@@ -42,3 +42,15 @@ git clone https://github.com/nandovx/technical-test.git
    ```bash
    dotnet run -- "1,2,3,3,4,4,5,6"
    ```
+
+## Part 2 - Technical Communication
+
+This folder contain a video and a image used to explain about Binary Search
+
+### 📂 Folder structure
+
+- `video-binary-search.mp4`  
+   An explanatory video demonstrating binary search.
+
+- `image-binary-search.png`  
+   An illustrative image relevant to explanation.
