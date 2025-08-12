@@ -18,6 +18,14 @@ git clone https://github.com/nandovx/technical-test.git
 
 ## Part 1 - Logic
 
+I choose the first question because I believe this is the most challenging.
+
+> 🔸 1. Números únicos
+>
+> Escreva uma função que receba uma lista de números e retorne apenas os que não se repetem.
+>
+> Exemplo: Entrada: [1, 2, 2, 3, 4, 4, 5] → Saída: [1, 3, 5]
+
 ### 🛠 Requirements
 
 - .NET SDK 8.0+ installed
