@@ -1,0 +1,33 @@
+.form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: #153757;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #1e4e8c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .btn {
+    width: 80%;
+  }
+}

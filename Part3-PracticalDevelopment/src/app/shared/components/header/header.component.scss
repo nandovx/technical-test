@@ -1,0 +1,46 @@
+.app-header {
+  background-color: #122b42;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.fernando {
+  font-weight: 800;
+  font-size: 1.2em;
+  color: white;
+}
+
+.events {
+  margin-top: -0.53rem;
+  margin-left: 0.085rem;
+  font-weight: 300;
+  font-size: 1.06rem;
+  color: #cfe4ff;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 32px;
+  }
+  .fernando {
+    font-size: 1.2em;
+  }
+  .events {
+    font-size: 1em;
+  }
+}

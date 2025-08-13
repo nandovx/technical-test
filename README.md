@@ -62,3 +62,57 @@ This folder contain a video and a image used to explain about Binary Search
 
 - `image-binary-search.png`  
    An illustrative image relevant to explanation.
+
+## Part 3 - Technical Communication
+
+In this Part I will develop a simple page using Angular.
+
+### 📂 Folder structure
+
+src/
+└── app/
+├── core/
+│ └── services/
+│ └── event.service.ts
+│
+├── features/
+│ └── event/
+│ ├── components/
+│ │ ├── event-details/
+│ │ │ ├── event-detail.component.html
+│ │ │ └── event-detail.component.ts
+│ │ │
+│ │ └── registration-modal/
+│ │ ├── registration-modal.component.html
+│ │ └── registration-modal.component.ts
+│ │
+│ ├── pages/
+│ │ └── event-page.component.ts
+│ │
+│ └── event.module.ts
+│
+├── shared/
+│ └── components/
+│ ├── footer/
+│ │ ├── footer.component.html
+│ │ ├── footer.component.scss
+│ │ └── footer.component.ts
+│ │
+│ └── header/
+│ ├── header.component.html
+│ ├── header.component.scss
+│ └── header.component.ts
+│
+├── app.component.html
+├── app.component.scss
+├── app.component.spec.ts
+├── app.component.ts
+├── app.config.server.ts
+├── app.config.ts
+├── app.routes.ts
+│
+├── index.html
+├── main.server.ts
+├── main.ts
+├── server.ts
+└── styles.scss
