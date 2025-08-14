@@ -2,3 +2,117 @@
 body {
   margin: 0;
 }
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+input {
+  all: unset;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  border-radius: 1rem;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-start,
+.mat-form-field-appearance-outline .mat-form-field-outline-end {
+  border-radius: 1rem;
+}
+
+.mat-form-field-appearance-outline .mat-input-element {
+  padding-left: 0.75rem;
+}
+
+.mat-mdc-text-field-wrapper {
+  background-color: rgb(221, 221, 221);
+  width: 100%;
+  z-index: 0;
+}
+
+.input.mat-input-element:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #e5e5e5 inset !important;
+  -webkit-text-fill-color: #000 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input.mat-input-element:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #e5e5e5 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.mdc-floating-label .mat-mdc-floating-label {
+  display: flex;
+  flex-direction: row;
+}
+
+.mat-mdc-form-field:not(.mat-form-field-disabled)
+  .mat-mdc-floating-label.mdc-floating-label {
+  display: flex;
+  cursor: inherit;
+}
+
+.mat-mdc-form-field
+  .mdc-text-field--outlined
+  .mdc-notched-outline--upgraded
+  .mdc-floating-label--float-above {
+  font-size: var(--mat-form-field-outlined-label-text-populated-size);
+  margin-right: -1.3rem;
+}
+.overlay-container {
+  display: flex;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  left: 12, 5%;
+  bottom: 0%;
+  justify-content: center;
+  align-items: center;
+}
+
+.toast-top-right,
+toast-container {
+  width: 100%;
+}
+
+.toast-success,
+.toast-error,
+.toast-info,
+.toast-warning {
+  max-width: 100%;
+  min-width: 250px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  word-break: break-word;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.toast-success {
+  background-color: #4caf50 !important;
+  color: #fff;
+}
+
+.toast-error {
+  background-color: #f44336 !important;
+  color: #fff;
+}
+
+.toast-info {
+  background-color: #2196f3 !important;
+  color: #fff;
+}
+
+.toast-warning {
+  background-color: #ff9800 !important;
+  color: #fff;
+}

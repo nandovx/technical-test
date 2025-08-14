@@ -1,17 +1,56 @@
-<div class="form">
-  <h3>Inscrição no Evento</h3>
+<div class="container-form">
+  <div class="form">
+    <h3>Inscrição no Evento</h3>
 
-  <div class="form-group">
-    <label for="name">Nome</label>
-    <input id="name" placeholder="Digite seu nome" />
-  </div>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label
+        style="
+          color: gray;
+          padding-left: 0.5rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        "
+        ><mat-icon class="icon">person</mat-icon> Nome</mat-label
+      >
+      <input
+        matInput
+        placeholder="Digite seu nome"
+        [(ngModel)]="person.name"
+        name="name"
+        required
+      />
+    </mat-form-field>
 
-  <div class="form-group">
-    <label for="email">E-mail</label>
-    <input id="email" placeholder="Digite seu e-mail" />
-  </div>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label
+        style="
+          color: gray;
+          padding-left: 0.5rem;
+          display: flex;
+          align-items: center;
+        "
+        ><mat-icon class="icon">email</mat-icon>E-mail</mat-label
+      >
+      <input
+        matInput
+        type="email"
+        placeholder="Digite seu e-mail"
+        [(ngModel)]="person.email"
+        name="email"
+        required
+      />
+    </mat-form-field>
 
-  <div class="modal-actions">
-    <button class="btn">Inscrever-se</button>
+    <div class="form-actions">
+      <button
+        mat-raised-button
+        class="btn"
+        color="primary"
+        (click)="submitForm()"
+      >
+        INSCREVER-SE
+      </button>
+    </div>
   </div>
 </div>

@@ -1,33 +1,46 @@
-.form {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  width: 300px;
+.container-form {
+  display: flex;
+  justify-content: center;
 }
 
-.form-group {
-  margin-bottom: 1rem;
+.form {
+  background: #faf9f6;
+  padding: 1.5rem;
+  border-radius: 8px;
+  padding-top: 0.5rem;
 }
 
 .btn {
   display: block;
-  margin: 1rem auto;
-  padding: 0.5rem 1rem;
+  margin: 0.4rem auto;
+  padding: 1rem 1rem;
   font-size: 1rem;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 4rem;
   cursor: pointer;
   background-color: #153757;
   color: white;
+  width: 100%;
 }
 
 .btn:hover {
   background-color: #1e4e8c;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .btn {
-    width: 80%;
-  }
+.full-width {
+  color: gray;
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  padding-left: 0.2rem;
+  padding-right: 0.45rem;
+  font-size: 36px; /* controla o tamanho */
+  width: 36px; /* garante alinhamento */
+  height: 36px;
 }

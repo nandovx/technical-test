@@ -1,3 +1,5 @@
 <ul>
-  <li><strong></strong> —</li>
+  <li *ngFor="let p of subscribers">
+    <strong>{{ p.name }}</strong> — {{ p.email }}
+  </li>
 </ul>

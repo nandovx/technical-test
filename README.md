@@ -63,56 +63,75 @@ This folder contain a video and a image used to explain about Binary Search
 - `image-binary-search.png`  
    An illustrative image relevant to explanation.
 
-## Part 3 - Technical Communication
+## Part 3 - Practical Development
 
-In this Part I will develop a simple page using Angular.
+![alt text](assets/image.png)
+In this Part I developed a simple page using Angular.
 
 ### 📂 Folder structure
 
-src/
-└── app/
-├── core/
-│ └── services/
-│ └── event.service.ts
+```
+Part3-PracticalDevelopment/
 │
-├── features/
-│ └── event/
-│ ├── components/
-│ │ ├── event-details/
-│ │ │ ├── event-detail.component.html
-│ │ │ └── event-detail.component.ts
+├─ public/ # Publicly accessible static files
+│
+├─ src/
+│ ├─ app/
+│ │ ├─ core/ # Global services and models
+│ │ │ ├─ model/ # TypeScript models (Person, Event)
+│ │ │ └─ services/ # Business logic and communication services
 │ │ │
-│ │ └── registration-modal/
-│ │ ├── registration-modal.component.html
-│ │ └── registration-modal.component.ts
+│ │ ├─ features/ # Project-specific features
+│ │ │ └─ event-page/ # Main event page
+│ │ │ ├─ event-details/ # Event details components
+│ │ │ └─ registration-form/ # Registration form
+│ │ │
+│ │ └─ shared/components/ # Shared components (Header, Footer)
 │ │
-│ ├── pages/
-│ │ └── event-page.component.ts
-│ │
-│ └── event.module.ts
+│ ├─ app.component.* # Angular root component
+│ ├─ app.routes.ts # Application routes
+│ └─ app.config.* # Project configuration
 │
-├── shared/
-│ └── components/
-│ ├── footer/
-│ │ ├── footer.component.html
-│ │ ├── footer.component.scss
-│ │ └── footer.component.ts
-│ │
-│ └── header/
-│ ├── header.component.html
-│ ├── header.component.scss
-│ └── header.component.ts
-│
-├── app.component.html
-├── app.component.scss
-├── app.component.spec.ts
-├── app.component.ts
-├── app.config.server.ts
-├── app.config.ts
-├── app.routes.ts
-│
-├── index.html
-├── main.server.ts
-├── main.ts
-├── server.ts
-└── styles.scss
+├─ node_modules/ # Project dependencies
+├─ .angular/ # Angular configuration
+└─ .vscode/ # VS Code configuration
+```
+
+### ⚙️ Technologies and Tools
+
+- **Angular (version 19)** – Main framework for SPA development
+- **TypeScript** – Static typing and object orientation
+- **SCSS** – Modular and reusable styling
+- **Angular Material (optional)** – Ready-to-use UI components
+- **ngx-toastr** – To notifications
+- **VS Code** – Development editor
+
+### 🚀 How to Run the Project
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server:
+
+```bash
+ng serve
+```
+
+3. Access the application in your browser:
+
+```text
+http://localhost:4200
+```
+
+### 🧩 Main Components
+
+- **EventPageComponent** – Main component for the event page
+
+- **EventDetailComponent** – Displays event details (title, description, attendee list)
+
+- **RegistrationFormComponent** – Registration form with validations and data submission
+
+- **HeaderComponent / FooterComponent** – Shared components for consistent layout
